@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(232, 237, 242, 0.468);
+}
+
+.nav-container{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+background-color: rgb(0, 0, 0);
+color: white;
+padding: 1rem;
+}
+.nav-container .nav-left{
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav-container .nav-left img{
+    filter: invert(100%);
+}
+.nav-container .nav-left .search{
+   margin: 0 .6rem;
+   padding: .1rem 1rem;
+   background-color: transparent;
+   border: 1px solid grey;
+   border-radius: 5px;
+}
+.nav-container .nav-left .search::placeholder{
+ color:white
+ }
+.nav-container .nav-left .list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 1rem;
+}
+
+.nav-container .nav-left .list li{
+    list-style: none;
+    margin: 0 .6rem;
+}
+
+.nav-right i{
+    margin: 0 .5rem;
+}
+.hero-section{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+}
+
+.hero-left{
+padding: 4rem 1.6rem;
+flex-basis: 30%;
+border-right: 1px solid rgba(181, 179, 179, 0.616);
+}
+.hero-left .heading{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.hero-left .heading .btn{
+    background-color: rgb(2, 174, 2);
+    padding: .1rem 1rem;
+    color: white;
+    margin-left:1rem;
+}
+
+.hero-left input{
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+   width: 100%;
+   padding: .5rem;
+   background-color: rgba(232, 237, 242, 0.468);
+   border: 1px solid rgb(184, 182, 182);
+   border-radius: 5px;
+   font-size: .8rem;
+}
+
+.recent-para{
+    border: 1px dashed rgb(161, 160, 160);
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: .75rem;
+    color: rgb(142, 142, 142);
+}
+
+.hero-middle{
+    background-color: rgba(232, 237, 242, 0.468);
+    padding: 1rem 3rem;
+}
+.btnn{
+    border: none;
+ 
+    padding: .3rem;
+    background-color: transparent;
+    margin: 0 .5rem;
+}
+.btnn:nth-child(1){
+
+    border-bottom: 2px solid orangered;
+   
+}
+.hero-middle-main{
+    background-color: white;
+    padding: 1.5rem 2rem;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 5px;
+    margin: 1.5rem 0;
+}
+
+.hero-middle-main p:nth-child(1){
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.hero-middle-main p:nth-child(2){
+
+    font-size: 1rem;
+    
+}
+
+.explore-git{
+    color: rgb(6, 6, 247);
+    font-weight: 600;
+    border: 1px solid rgb(205, 203, 203);
+    padding: .4rem 1rem ;
+    border-radius: 5px;
+}
+
+.hero-middle i{
+   margin: 0 .4rem ;
+
+}
+
+.hero-middle span{
+    margin: 0 .4rem;
+    font-size: .8rem;
+
+ }
+
+
+ .footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+    color: rgb(141, 139, 139);
+  
+ }
+
+ .footer-right{
+    display: flex;
+
+ }
+ .footer-right div {
+   
+    margin: 0 1rem;
+  }
+ .footer-right div li{
+   list-style: none;
+   margin: .3rem 0;
+   font-size: .8rem;
+ }
+
+
+ .hero-right{
+    flex-basis: 33%;
+    padding: 2rem 1rem;
+    background-color: rgba(232, 237, 242, 0.468);
+ }
+ .hero-right p:nth-child(2n+1){
+   font-size: .7rem;
+   margin: 0;
+ }
+ .hero-right p:nth-child(2n){
+   margin: 0;
+   margin-bottom: 1rem;
+  }
+.hero-right{
+    position: relative;
+}
+  .hero-right .news::before{
+    content: "";
+    width: 1.5px;
+    height: 240px;
+    background-color: rgb(223, 221, 221);
+    position: absolute;
+    top: 64px;
+    left: 0px;
+    margin-right: 1rem;
+  }
+
+  .hero-right .news p:nth-child(2n+1)::before{
+    content:"";
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: rgb(207, 206, 206);
+    position: absolute;
+    top: 64px;
+    left: -3.8px;
+    margin-right: 1rem;
+  }
+
+  .hero-right .news p:nth-child(2n+1)::after{
+    content:"";
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: rgb(205, 204, 204);
+    position: absolute;
+    top: 121px;
+    left: -3.8px;
+    margin-right: 1rem;
+  }
+
+  
+  @media (max-width:992px){
+    .hero-section{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .hero-left,.hero-right{
+        flex: 1;
+        
+    }
+    
+    
+    .hero-right{
+        margin-left: .4rem;
+        width: 100%;
+    }
+  }
